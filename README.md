@@ -6,3 +6,7 @@ interesting.
 If you wanna try it _(at your own risk)_ then just
 run with python Payster.py file and open app in browser
 http://localhost:5000
+
+Next steps to implement:
+* cover code with unit and integration tests
+* CI or dockerize
