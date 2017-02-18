@@ -12,62 +12,53 @@
         <span id="small-span">your salary</span>
     </h1>
 </div>
-<div class="row text-center">
-    <div class="col-md-4"></div>
-    <div class="col-md-4" id="mainForm">
-        <h3>What do you know?</h3>
-    </div>
-    <div class="col-md-4"></div>
-</div>
-<div class="row text-center">
-    <div class="col-md-4">
-        <h3><a>Payment/hour</a></h3>
-    </div>
-    <div class="col-md-4" id="mainForm">
-        <h3><b>OR</b></h3>
-    </div>
-    <div class="col-md-4">
-        <h3><a>Month salary</a></h3>
-    </div>
-</div>
 <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6">
         <div class="table-responsive">
-            <form class="table" id="formTable" action="http://localhost:5000/calculate" method="POST">
-                <tbody>
-                <tr>
-                    <td>Payment/hour or Month Salary</td>
-                    <td>
+            <form class="table" action="http://localhost:5000/calculate" method="POST">
+                <div>
+                    <div>
+                        <h3>What do you know?</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="input-group center-block">
+                        Payment/hour&nbsp;&nbsp;&nbsp;<b>OR</b>&nbsp;&nbsp;&nbsp;Month salary <br/>
+                        <input type="radio" name="money_type" value="hourly"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="money_type" value="monthly"/>
+                    </div>
+                </div>
+                <div>
+                    <div>Amount of money</div>
+                    <div>
                         <div class="input-group">
-                            <input type="text" name="moneyAmount" class="form-control" aria-label="Amount (to the nearest dollar)" />
+                            <input type="text" name="moneyAmount" class="form-control"
+                                   aria-label="Amount (to the nearest dollar)"/>
                             <span class="input-group-addon">$</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Work hours</td>
-                    <td>
+                    </div>
+                </div>
+                <div>
+                    <div>Work hours</div>
+                    <div>
                         <div class="input-group">
-                            <input type="text" name="hours" class="form-control" value="8" onfocus="value=''" />
+                            <input type="text" name="hours" class="form-control" value="8" onfocus="value=''"/>
                             <span class="input-group-addon">/day</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Work days</td>
-                    <td>
+                    </div>
+                </div>
+                <div>
+                    <div>Work days</div>
+                    <div>
                         <div class="input-group">
-                            <input type="text" name="days" class="form-control" value="21" onfocus="value=''" />
+                            <input type="text" name="days" class="form-control" value="21" onfocus="value=''"/>
                             <span class="input-group-addon">/month</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                </tbody>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
