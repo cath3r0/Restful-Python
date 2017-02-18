@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Glasoor;
+    src: url(/static/fonts/Glasoor.otf)format('opentype');
+}
+
+@font-face {
+    font-family: Track;
+    src: url(/static/fonts/Track.otf)format('opentype');
+}
+
+#mainForm {
+    margin-top: 100px;
+    margin-left: -150px;
+    width: 800px;
+}
+
+.jumbotron {
+    height: 150px;
+    font-family: Glasoor;
+    color: whitesmoke;
+    background-color: #59c57f;
+    padding: 0 !important;
+    white-space: pre-wrap;
+    margin: 0 0 0 0 !important;
+}
+
+    .jumbotron h1 {
+        padding: 0 !important;
+        font-size: 6em;
+        line-height: 0.75;
+        margin: 0 0 0 0 !important;
+    }
+
+#small-span {
+    font-size: 0.75em;
+}
+
+.row {
+    text-align: center;
+    width: 100%;
+}
+
+.table {
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+input {
+    text-align: right;
+}
+
+.row.myrow {
+    padding-bottom: 40px;
+}
+
+body {
+    background-color: #59c57f;
+    font-family: Track;
+    color: whitesmoke;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+a:hover {
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration:none;
+}
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 500px;
+}
+
+#formTable > div:nth-child(4) {
+    padding: 20px;
+}

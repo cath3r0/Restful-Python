@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="jumbotron text-center" id="logo">
+    <h1>Calculate!
+        <span id="small-span">your salary</span>
+    </h1>
+</div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="table-responsive">
+            <form class="table" action="http://localhost:5000/calculate" method="POST">
+                <div>
+                    <div>
+                        <h3>What do you know?</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="input-group center-block">
+                        Payment/hour&nbsp;&nbsp;&nbsp;<b>OR</b>&nbsp;&nbsp;&nbsp;Month salary <br/>
+                        <input type="radio" name="money_type" value="hourly"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="money_type" value="monthly"/>
+                    </div>
+                </div>
+                <div>
+                    <div>Amount of money</div>
+                    <div>
+                        <div class="input-group">
+                            <input type="text" name="moneyAmount" class="form-control"
+                                   aria-label="Amount (to the nearest dollar)"/>
+                            <span class="input-group-addon">$</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>Work hours</div>
+                    <div>
+                        <div class="input-group">
+                            <input type="text" name="hours" class="form-control" value="8" onfocus="value=''"/>
+                            <span class="input-group-addon">/day</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>Work days</div>
+                    <div>
+                        <div class="input-group">
+                            <input type="text" name="days" class="form-control" value="21" onfocus="value=''"/>
+                            <span class="input-group-addon">/month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <input type="submit" class="btn btn-default" id="submitButton" value="Get the result!"/>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+</body>
+</html>

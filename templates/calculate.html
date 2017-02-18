@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="jumbotron text-center" id="logo">
+    <h1>Calculate!
+        <span id="small-span">your salary</span>
+    </h1>
+</div>
+<div class="row text-center"></div>
+<div class="row text-center">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" id="mainForm">
+        <h3><b>Your {{ result[1] }} is:</b></h3>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" id="mainForm">
+        <h3>{{ result[0] }}$</h3>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+</body>
+</html>
