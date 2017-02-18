@@ -68,3 +68,7 @@ select,
 textarea {
     max-width: 280px;
 }
+#formTable > div:nth-child(4) {
+    padding: 20px;
+    width: 655px;
+}
